@@ -12,7 +12,7 @@ table {
 
 thead {
    font-size: 20px;
-   background-color: rgb(228 240 245);
+   background-color: rgb(230 230 230);
 }
 
 td, th {
@@ -21,10 +21,10 @@ td, th {
    padding-right: 10px;
 }
 
-td:hover {
-   background-color: rgb(228 240 245);
-}
-
 tbody > tr:nth-of-type(even) {
    background-color: rgb(245 245 245);
+}
+
+tbody tr:hover {
+   background-color: rgb(228 240 245);
 }
