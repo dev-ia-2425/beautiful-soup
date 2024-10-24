@@ -1,0 +1,30 @@
+html {
+   font-family: "Open Sans", sans-serif;
+}
+
+table {
+   border-collapse: collapse;
+   border: 2px solid rgb(140 140 140);
+   font-family: sans-serif;
+   font-size: 0.8rem;
+   letter-spacing: 1px;
+}
+
+thead {
+   font-size: 20px;
+   background-color: rgb(228 240 245);
+}
+
+td, th {
+   border: 1px solid rgb(160 160 160);
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+tbody > tr:nth-of-type(even):not(tr:hover) {
+   background-color: rgb(245 245 245);
+}
+
+tr:hover {
+   background-color: rgb(228 240 245);
+}

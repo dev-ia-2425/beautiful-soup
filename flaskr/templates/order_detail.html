@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+   <title> Dataviz - Order details </title>
+   <link href="{{ url_for('static', filename='styles.css') }}"" rel="stylesheet"/>
+</head>
+<body>
+   <section class="content">
+      <table justify="center">
+         <thead>
+            <tr>
+               <th scope="col">ID</th>
+               <th scope="col">Quantity</th>
+               <th scope="col">Order ID</th>
+               <th scope="col">Product ID</th>
+            </tr>
+         </thead>
+         <tbody>
+            {% for row in rows %}
+            <tr>
+               <th scope="row"> {{ row['id'] }} </th>
+               <td> {{ row['quantity'] }} </td>
+               <td> {{ row['order_id'] }} </td>
+               <td> {{ row['product_id'] }} </td>
+            </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+   </section>
+</body>
+</html>
